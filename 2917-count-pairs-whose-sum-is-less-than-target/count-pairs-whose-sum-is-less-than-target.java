@@ -17,8 +17,6 @@ class Solution {
 // TC: O(n.logn)
 // SC: O(logn)
 
-
-
 // class Solution {
 //     public int countPairs(List<Integer> nums, int target) {
 //         Collections.sort(nums);
