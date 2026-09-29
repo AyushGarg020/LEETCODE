@@ -1,5 +1,19 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
+        int miss = k;
+        for(int i : arr){
+            if(i <= miss)
+                miss++;
+            else
+                break;
+        }
+        return miss;        
+    }
+}
+
+/*
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
         var set = new HashSet<Integer>();
         for(int num : arr)
             set.add(num);
@@ -14,3 +28,4 @@ class Solution {
         return i;
     }
 }
+*/
