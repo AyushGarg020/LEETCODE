@@ -3,13 +3,9 @@ class Solution {
         int vowel = 0;
         int consonant = 0;
         for(char ch : s.toCharArray()) {
-            if(ch == ' ')
-                continue;
-            else if(Character.isDigit(ch))
-                continue;
-            else if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
                 vowel++;
-            else
+            else if(ch>='a' && ch<='z')
                 consonant++;
         }
         if(consonant==0)
