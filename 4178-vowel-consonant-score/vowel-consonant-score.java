@@ -10,6 +10,7 @@ class Solution {
         }
         if(consonant==0)
             return 0;
-        return (int)Math.floor(vowel/consonant);
+        int ans = vowel/consonant;
+        return ans;
     }
 }
