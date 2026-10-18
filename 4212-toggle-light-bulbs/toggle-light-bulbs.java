@@ -1,16 +1,14 @@
 class Solution {
     public List<Integer> toggleLightBulbs(List<Integer> bulbs) {
-        boolean[] bulbState = new boolean[101];
-        for(Integer bulb : bulbs) {
-            bulbState[bulb] = !bulbState[bulb];
-        }
-        List<Integer> result = new ArrayList<Integer>();
-        for(int i=1; i<101; i++) {
-            if(bulbState[i]) {
-                result.add(i);
-            }
-        }
+        ArrayList<Integer> ans = new ArrayList<>();
+        boolean[] arr = new boolean[101];
+        for(int bulb : bulbs)
+            arr[bulb] = !arr[bulb];
 
-        return result;
+        for(int i=0; i<101; i++) 
+            if(arr[i])
+                ans.add(i);
+
+        return ans;
     }
 }
