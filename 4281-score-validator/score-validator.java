@@ -19,8 +19,7 @@ class Solution {
             else
                 score++;
         }
-        int[] arr = {score, counter};
-        return arr;
+        return new int[]{score, counter};
     }
 }
 
