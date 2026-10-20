@@ -12,6 +12,7 @@ class Solution {
             i++;
         }
 
-        return String.valueOf(arr);
+        // return String.valueOf(arr);
+        return new String(arr);
     }
 }
