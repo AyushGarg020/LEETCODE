@@ -23,10 +23,7 @@ class Solution {
         while(right<n) {
             int num = nums[right]-nums[left];
             if(num>0) ans = Math.max(ans, num);
-
-            if(nums[left]>nums[right])
-                left = right;
-
+            if(nums[left]>nums[right]) left = right;
             right++;
         }
         return ans;
