@@ -10,8 +10,8 @@ class Solution {
             totalDuration+=Math.min(gap, duration);
         }
         
-        // totalDuration+=duration;
+        totalDuration+=duration;
 
-        return totalDuration + duration;
+        return totalDuration;
     }
 }
