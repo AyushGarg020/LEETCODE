@@ -1,5 +1,22 @@
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
+        int n = image.length;
+        for (int[] row : image) {
+            int left = 0, right = n - 1;
+            while (left <= right) {
+                int temp = row[left] ^ 1;
+                row[left] = row[right] ^ 1;
+                row[right] = temp;
+                left++;
+                right--;
+            }
+        }
+
+        return image;
+    }
+}
+/*class Solution {
+    public int[][] flipAndInvertImage(int[][] image) {
         for(int i=0; i<image.length; i++) {
             int left = 0;
             int right = image[i].length-1;
@@ -11,7 +28,6 @@ class Solution {
                 right--;
             }
         }
-
         for(int i=0; i<image.length; i++) {
             for(int j=0; j<image[i].length; j++) {
                 if(image[i][j]==0)
@@ -22,4 +38,4 @@ class Solution {
         }
         return image;
     }
-}
+}*/
