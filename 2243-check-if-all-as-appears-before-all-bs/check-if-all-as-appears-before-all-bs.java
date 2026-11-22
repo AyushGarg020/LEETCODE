@@ -1,5 +1,10 @@
 class Solution {
     public boolean checkString(String s) {
+        return !s.contains("ba");
+    }
+}
+/*class Solution {
+    public boolean checkString(String s) {
         int n = s.length();
         boolean foundB = false;
         
@@ -12,7 +17,7 @@ class Solution {
         return true;
     }
 }
-/*class Solution {
+class Solution {
     public boolean checkString(String s) {
         int n = s.length();
         int left = 0;
